@@ -1,0 +1,95 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.5-dev                               |
+|   \\  /    A nd           | Web:      http://www.OpenFOAM.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      alpha.water;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 0 0 0 0];
+
+internalField   uniform 0;
+
+boundaryField
+{
+    inlet
+    {
+        type            zeroGradient;
+    }
+    outlet
+    {
+        type            zeroGradient;
+    }
+    bottom
+    {
+        type            zeroGradient;
+    }
+    "wall."
+    {
+        type            zeroGradient;
+    }
+    wall1
+    {
+        type            zeroGradient;
+    }
+    "wall1"
+    {
+        type            zeroGradient;
+    }
+    wall1_wavemakerTank1
+    {
+        type            zeroGradient;
+    }
+    "wall1_wavemakerTank1"
+    {
+        type            zeroGradient;
+    }
+    wall2
+    {
+        type            zeroGradient;
+    }
+    "wall2"
+    {
+        type            zeroGradient;
+    }
+    wall1_wavemakerTank2
+    {
+        type            zeroGradient;
+    }
+    "wall1_wavemakerTank2"
+    {
+        type            zeroGradient;
+    }
+    wall3
+    {
+        type            zeroGradient;
+    }
+    "wall3"
+    {
+        type            zeroGradient;
+    }
+    wall1_wavemakerTank3
+    {
+        type            zeroGradient;
+    }
+    "wall1_wavemakerTank3"
+    {
+        type            zeroGradient;
+    }
+    atmosphere
+    {
+        type            inletOutlet;
+        inletValue      uniform 0;
+        value           uniform 0;
+    }
+}
+
+// ************************************************************************* //
